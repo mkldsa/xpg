@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+
+body,
+html {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    /* overflow-x: hidden */
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: white;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* reset */
+
+.inner {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    /* outline: 2px solid lime; */
+}
+
+/*------------------- header --------------- */
+header {
+    width: 100%;
+    height: 100px;
+
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    /* outline: 2px solid red; */
+}
+
+.share-inner {
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+    /* outline: 2px solid blue; */
+
+    position: relative;
+}
+
+header .h-logo {}
+
+.h-logo>h1 {}
+
+.h-logo>h1>a {}
+
+.h-logo>h1>a>img {
+    float: left;
+    /* outline: 2px solid white; */
+    display: block;
+
+    padding: 30px 0;
+}
+
+header nav {
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+}
+
+header nav .gnb {}
+
+header nav .gnb>li {
+    float: left;
+    position: relative;
+    /* lnb 기준 */
+
+    /* background-color: blueviolet; */
+}
+
+header nav .gnb>li~li {
+    margin-left: 80px;
+}
+
+header nav .gnb>li>a {
+    font-size: 20px;
+    line-height: 100px;
+    color: white;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.gnb li .lnb {
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    overflow: hidden;
+
+    position: absolute;
+
+    transform: translateY(-16px);
+
+    display: none;
+}
+
+.gnb li .lnb li {
+    padding: 10px 0;
+}
+
+.gnb li .lnb li a {
+    padding: 16px 12px;
+}
+
+header .h-icon {
+    float: right;
+    padding-top: 34.5px;
+}
+
+header .h-icon a {}
+
+header .h-icon a img {
+    float: left;
+    margin-left: 30px;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* 메인 비주얼 */
+.main-visual {
+    position: relative;
+
+    margin-top: 100px;
+}
+
+.main-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    outline: 2px solid red;
+}
+
+.main-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-text img {
+    width: 120px;
+}
+
+.main-text h2 {
+    font-size: 28px;
+    margin: 20px 0 10px;
+}
+
+.main-text p {
+    font-size: 16px;
+}
+
+/* 익스트림 소개 */
+.extreme h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.extreme p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 소개 영역 */
+.intro-by-adata h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.intro-by-adata p {
+    width: 70%;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.intro-by-adata img {
+    width: 600px;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 연혁 */
+.history h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.history-banner img {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid white;
+}
+
+.year-list {
+    margin: 30px auto 10px;
+    padding: 0;
+    list-style: none;
+    width: 90%;
+    text-align: center;
+}
+
+.year-list li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 14px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.year-list li.active {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.year-desc {
+    margin-top: 30px;
+}
+
+.year-desc h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.year-desc p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Exoskeleton */
+.exoskeleton h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.exoskeleton p {
+    width: 75%;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.exoskeleton img {
+    width: 600px;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
