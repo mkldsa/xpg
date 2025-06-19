@@ -810,7 +810,7 @@ main .mouse-icon img {
 .n-container .n-banner>img {
     position: absolute;
 
-    right: -50%;
+    right: 0%;
     top: 50%;
     transform: translateY(-50%);
 
