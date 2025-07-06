@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>XPG | 홈</title>
 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
 
     <script src="js/jquery-1.12.4.min.js"></script>
@@ -17,8 +19,6 @@
 
 <body>
     <!-- 클래스 이름은 섹션에 맞는 앞 단어들을 붙여주기 / 구현할 것 까지 생각하기 -->
-
-
 
 
     <header>
@@ -36,7 +36,7 @@
                         <a href="#">스토리</a>
 
                         <ul class="lnb">
-                            <li><a href="#">연혁</a></li>
+                            <li><a href="content/brand.html">연혁</a></li>
                         </ul>
                     </li>
 
@@ -47,7 +47,7 @@
                             <li><a href="content/mouse.html">마우스</a></li>
                             <li><a href="content/keyboard.html">키보드</a></li>
                             <li><a href="content/headset.html">헤드셋</a></li>
-                            <li><a href="#">케이스</a></li>
+                            <li><a href="content/case.html">케이스</a></li>
                             <li><a href="#">SSD</a></li>
                         </ul>
                     </li>
@@ -63,7 +63,7 @@
                     </li>
 
                     <li>
-                        <a href="#">커뮤니티</a>
+                        <a href="content/comunity.html">커뮤니티</a>
                     </li>
                 </ul>
             </nav>
@@ -104,7 +104,7 @@
 
                         <!-- div.btn이나 하위 p태그나 같은 역할을 하게 될 텐데 p태그를 꼭 안 써도 되요  -->
                         <div class="btn">
-                            <a href="#">바로가기</a>
+                            <span><a href="#">바로가기</a></span>
                         </div>
                     </div>
                 </div>
@@ -215,23 +215,23 @@
                             <p>
                                 디자인도, 성능도 내 마음대로! 나만의 커스텀 게이밍 장비를 완성하세요
                             </p>
+                        </div>
 
+                        <div class="c-txtboxtitle">
 
-                            <div class="c-txtboxtitle">
-                                <div>
-                                    <h3>커스텀 디자인</h3>
-                                    <p>CUSTOM DESING</p>
-                                </div>
-                            </div>
+                            <h3>커스텀 디자인</h3>
+                            <p>CUSTOM DESING</p>
 
-                            <div class="btn-grp2">
-                                <div class="btn-box2">
-                                    <div class="btn2">
-                                        <a href="#">바로가기</a>
-                                    </div>
-                                </div>
+                        </div>
+
+                        <!-- <div class="btn-grp2"> -->
+                        <div class="btn-box2">
+                            <div class="btn2">
+                                <a href="#">바로가기</a>
                             </div>
                         </div>
+                        <!-- </div> -->
+
                     </div>
                 </div>
             </div>
@@ -250,26 +250,26 @@
                 <div class="gear clear">
                     <div class="wrapper">
                         <div class="border-box">
-                            <a href="#"><img src="img/mouse1.png" alt="마우스 이미지"></a>
+                            <a href="content/mouse.html"><img src="img/mouse1.png" alt="마우스 이미지"></a>
                         </div>
                     </div>
 
                     <div class="wrapper">
                         <div class="border-box">
-                            <a href="#"><img src="img/keyboard.png" alt="키보드 이미지"></a>
+                            <a href="content/keyboard.html"><img src="img/keyboard.png" alt="키보드 이미지"></a>
                         </div>
 
                     </div>
 
                     <div class="wrapper">
                         <div class="border-box">
-                            <a href="#"><img src="img/headset.png" alt="헤드셋 이미지"></a>
+                            <a href="content/headset.html"><img src="img/headset.png" alt="헤드셋 이미지"></a>
                         </div>
                     </div>
 
                     <div class="wrapper">
                         <div class="border-box">
-                            <a href="#"><img src="img/case.png" alt="케이스 이미지"></a>
+                            <a href="content/case.html"><img src="img/case.png" alt="케이스 이미지"></a>
                         </div>
                     </div>
 
@@ -325,9 +325,34 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
+   <!--  <section class="n-container-sample">
+        <div class="top">
+            <div class="inbox"></div>
+        </div>
+
+        <div class="content-box">
+            <div class="inbox"></div>
+        </div>
+
+        <div class="content-box">
+            <div class="box1">
+                <div class="inbox"></div>
+            </div>
+
+            <div class="box2">
+                <div class="inbox"></div>
+            </div>
+
+            <div class="box3">
+                <div class="inbox"></div>
+            </div>
+        </div>
+    </section> -->
 
     <section class="n-container">
         <!-- 새소식 / 스크롤 내렸을때 배경 먼저 나오면서 남자 이미지 옆에서 나오는 구현 / 전체화면 기준  -->
@@ -345,12 +370,19 @@
                     </p>
                 </div>
             </div>
+
+            <!-- <div class="n-inner">
+                <img src="" alt="">
+
+                <div class="n-titlebox"></div>
+            </div> -->
         </div>
 
 
         <div class="n-content clear">
+
             <div class="n-content1">
-                <div class="n-inner">
+                <!-- <div class="n-inner"> -->
                     <div class="n-txtbox clear">
                         <div class="n-desbox">
                             <h2>
@@ -370,11 +402,11 @@
                             <img src="img/newman1-1.png" alt="남자">
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
 
             <div class="n-content2">
-                <div class="n-inner">
+                <!-- <div class="n-inner"> -->
                     <div class="n-txtbox2 clear">
                         <div class="n-desbox2">
                             <h2>
@@ -393,11 +425,11 @@
                             <img src="img/newman2-1.png" alt="남자">
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
 
             <div class="n-content3">
-                <div class="n-inner">
+                <!-- <div class="n-inner"> -->
                     <div class="n-txtbox3 clear">
                         <div class="n-desbox3">
                             <h2>
@@ -417,7 +449,7 @@
                             <img src="img/newgear.png" alt="남자">
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </section>

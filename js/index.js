@@ -19,10 +19,17 @@ $(function () {
     });
 });
 
-var scTop = $(window).on('scroll', function () {
-    scTop = Math.ceil($(this).scrollTop());
-    console.log(scTop);
+//전역변수 
+/* var content1Pos = 0,
+    content2Pos = 0,
+    content3Pos = 0;
+var gap = 200; */
 
+$(window).on('scroll', function () {
+    var scTop = Math.ceil($(this).scrollTop());
+    console.log('현재 스크롤위치값: ' + scTop);
+
+    // 어떤영역의 어떤 요소의 등장인지 써 놓으세요
     if (scTop > 400) {
         $('.t-box').each(function (i) {
             $(this)
@@ -30,61 +37,61 @@ var scTop = $(window).on('scroll', function () {
                 .slideDown(600);
         });
     }
-});
 
-$(window).on('scroll', function () {
-    var scTop = $(this).scrollTop();
-
+    // 누구등장?
     if (scTop > 950) {
-        $('.c-banner img').css({
-            right: '2%',
-            opacity: 1
-        });
-    }
-
-    if (scTop > 950) {
-        $('.c-title > .c-txtbox').css({
+        $('.c-banner img').addClass('active');
+        $('.c-title').css({
             left: '1%',
             opacity: 1
         });
     }
-});
 
-$(window).on('scroll', function () {
-    var scTop = $(this).scrollTop();
-
+    //누구등장?
     if (scTop > 2800) {
         $('.n-banner img').css({
             right: '5%',
             opacity: 1,
-            transfrom: 'translateY(-50%)'
+            transform: 'translateY(-50%)'
         });
-    }
 
-    if (scTop > 2800) {
         $('.n-inner .n-titlebox').css({
             left: '2%',
             opacity: 1,
-            transfrom: 'translateY(-50%)'
+            transform: 'translateY(-50%)'
         });
     }
-});
 
-$(window).on('scroll', function () {
-    var scTop = $(this).scrollTop();
 
     if (scTop > 3400) {
         $('.n-content1').addClass('active');
     }
 
     if (scTop > 3800) {
-        $('.n-content2').delay(500).addClass('active');
+        setTimeout(function () {
+            $('.n-content2').addClass('active');
+        }, 200);
     }
 
     if (scTop > 4100) {
-        $('.n-content3').delay(700).addClass('active');
+        setTimeout(function () {
+            $('.n-content3').addClass('active');
+        }, 300);
     }
+
+
+    //2025.06.24
+    /* if (scTop > 3400){
+        $('.n-content1').animate({}, 600, function(){
+            //.n-content1이 등장하고 난 후 실행!
+        });
+
+        //방법2 - animate() 앞에 delay() 적용!
+        //$('.n-content2').delay().animate();
+    } */
+
 });
+
 
 
 
